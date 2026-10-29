@@ -63,7 +63,7 @@ def main():
             f"{total} cards to learn his choices. Each shows a position (from Black's side) and asks what Carlsen plays next. "
             "Click a card to reveal his move, how many games, and his score. Open a first move below to see its cards.\n\n"
             '{{< flashcards tools="true" >}}{{< /flashcards >}}\n\n'
-            "\n".join(groups))
+            + "\n".join(groups))
     open(os.path.join(ch, "07-flashcards.md"), "w", encoding="utf-8").write(body)
     print(total, "cards")
 
